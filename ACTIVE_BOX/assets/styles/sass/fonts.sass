@@ -1,0 +1,88 @@
+@font-face
+    font-family: Webdings
+    src: url(../fonts/webdings/webdings.ttf)
+
+@font-face
+    font-family: 'Cardo', serif
+    src: url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700&display=swap')
+
+@mixin Rale
+    font-family: "Raleway"
+
+@mixin Webd
+    font-family: "Webdings"
+
+@mixin Font($font-size, $font-name, $color, $font-weight, $text-transform)
+    font-size: $font-size
+    font-family: $font-name
+    font-weight: $font-weight
+    text-transform: $text-transform
+    color: $color
+
+//button
+.button
+    line-height: 1.615
+    @include Font(13px, "Raleway", rgb(255, 255, 255), bold, uppercase )
+
+//up
+.up
+    @include Font(13px, "Raleway", white, bold, uppercase )
+    &:hover
+        color: black
+        opacity: 0.8
+        background-color: white
+        box-shadow: 1px 1px 10px black
+//header 
+.header__item
+    @include Font(13px, "Raleway", white, bold, uppercase )
+
+//section--favorite 
+.favorite__h1
+    line-height: 1.092
+    @include Font(65px, "Open Sans", rgb(255, 255, 255), bold, uppercase )
+
+.favorite__h2
+    line-height: 1.5
+    @include Font(22px, "Raleway", rgb(255, 255, 255), normal, none )
+
+//section--icon
+.icon
+    &__header
+        line-height: 14px
+        @include Font(14px, "Raleway", #2d3033, 700, uppercase )
+
+    &__description
+        line-height: 21px
+        @include Font(14px, "Raleway", #6c7279, 400, none )
+
+//section--start
+.start
+    &__header
+        @include Font(28px, "RaleWay", #2d3033, normal, none)
+
+    &__description
+        @include Font(28px, "RaleWay", #2d3033, normal, none)
+
+//section--contact
+
+.contact
+    &__header
+        @include Font(14px, "Raleway", #ffffff, 700, uppercase)
+    &__description
+        line-height: 22.5px
+        opacity: 0.5
+        @include Font(14px, "Raleway", #ffffff, 400, none)
+
+//footer
+.footer
+    &__rale
+        line-height: 22.5px
+        @include Font(14px, "RaleWay", #808080, 400, none)
+
+    &__webding
+        color: red
+        @include Webd
+
+    &__kamal
+        color: #ffffff
+        @include Rale

@@ -1,0 +1,20 @@
+a:link {
+  text-decoration: none; }
+a:active {
+  text-decoration: none; }
+a:visited {
+  text-decoration: none; }
+
+.header__item:hover {
+  background-color: white;
+  opacity: 0.2;
+  color: black; }
+
+.people__social .fab:hover {
+  color: black;
+  opacity: 0.8; }
+
+.contact__social .fab:hover {
+  opacity: 0.3; }
+
+/*# sourceMappingURL=effects.css.map */
