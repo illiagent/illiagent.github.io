@@ -32,5 +32,10 @@ console.log(typeof(nul));
 
 
 let age = prompt('Сколько Вам лет?');
-alert(`Вам ${age} лет!`); 
-if (age >= 18) {alert( 'Вам есть 18 лет!' )} else {alert('Немедленно закройте эту вкладку!')};
+alert(`Ваш возраст: ${age} лет!`); 
+if (age >= 18) {alert( 'Congratulations! Вы совершеннолетний!' )} else {alert('Немедленно закройте эту вкладку!')};
+
+
+
+
+
