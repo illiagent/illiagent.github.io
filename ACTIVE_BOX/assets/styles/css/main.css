@@ -586,3 +586,47 @@ body {
     font-size: 25px; }
   .two .slider__description {
     font-size: 10px; } }
+@media (min-width: 350px) and (max-width: 500px) {
+  .header__item {
+    font-size: 4px; }
+
+  .favorite__h1 {
+    font-size: 30px; }
+  .favorite__h2 {
+    font-size: 10px; }
+
+  .icon__description {
+    font-size: 10px; }
+
+  .people__name {
+    font-size: 15px; }
+  .people__photo {
+    width: 150px;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto; }
+  .people__social {
+    justify-content: center;
+    margin-bottom: 50px; }
+  .people__part {
+    width: 50%;
+    margin: 0;
+    text-align: center; }
+  .people__container {
+    flex-wrap: wrap; }
+  .people__description {
+    font-size: 10px; }
+
+  .circles {
+    margin-top: 382px;
+    margin-left: 60%; }
+
+  .one {
+    background-position: center; }
+
+  .two .slider__header {
+    font-size: 25px; }
+  .two .slider__description {
+    font-size: 10px; } }
+
+/*# sourceMappingURL=main.css.map */
