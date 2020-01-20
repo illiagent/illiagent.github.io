@@ -3,31 +3,30 @@ var stringText = "eto text stroki";
 alert(stringText);
 stringText = 555;
 alert(stringText);
-//тип строка
+//stroka
 var stroka = "eto stroka";
 alert(stroka);
 console.log(typeof(stroka));
-//тип  числовой
+//number
 var number = 5;
 alert(number);
 console.log(typeof(number));
-//тип boolean
+//boolean
 var bool = true;
 alert(bool);
 console.log(typeof(bool));
-//тип объект
+//object
 var mass = [1, 3, 7];
 alert(mass);
 console.log(typeof(mass));
-//тип undefined
+//undefined
 var a;
 alert(typeof(a));
 console.log(typeof(a));
-//тип null
+//null
 var nul = null;
 alert(nul);
 console.log(typeof(nul));
-//возраст
 // модификация кода final!
 var age = prompt('Сколько Вам лет?');
 while (isNaN(age) || (age <= 0)) {
