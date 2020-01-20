@@ -1,3 +1,4 @@
+// ДЗ по JS
 var stringText = "eto text stroki";
 alert(stringText);
 stringText = 555;
