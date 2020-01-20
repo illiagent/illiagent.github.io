@@ -1,32 +1,33 @@
-// ДЗ по JS
+// ДЗ по JS  channnnggreeeeeee
 var stringText = "eto text stroki";
 alert(stringText);
 stringText = 555;
 alert(stringText);
-//stroka
+//тип строка
 var stroka = "eto stroka";
 alert(stroka);
 console.log(typeof(stroka));
-//number
+//тип  числовой
 var number = 5;
 alert(number);
 console.log(typeof(number));
-//boolean
+//тип boolean
 var bool = true;
 alert(bool);
 console.log(typeof(bool));
-//object
+//тип объект
 var mass = [1, 3, 7];
 alert(mass);
 console.log(typeof(mass));
-//undefined
+//тип undefined
 var a;
 alert(typeof(a));
 console.log(typeof(a));
-//null
+//тип null
 var nul = null;
 alert(nul);
 console.log(typeof(nul));
+//возраст
 // модификация кода final!
 var age = prompt('Сколько Вам лет?');
 while (isNaN(age) || (age <= 0)) {
