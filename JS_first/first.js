@@ -32,11 +32,19 @@ alert(nul);
 console.log(typeof(nul));
 
 
-let age = prompt('Сколько Вам лет?');
-alert(`На сегодняшний день Вам ${age} лет!`); 
-if (age >= 18) {alert( 'Congratulations! Вы совершеннолетний!' )} else {alert('Немедленно закройте эту вкладку!')};
 
 
+
+
+
+var age = prompt('Сколько Вам лет?');
+if(isNaN(age) || (age<=0)){
+	alert(  "Если Вы не робот, введите КОРРЕКТНЫЙ возраст!!!");
+ }else{
+	alert( "возраст принят");
+if (age >= 18) {alert( 'Congratulations! Вы совершеннолетний!' )} else {alert('Немедленно закройте эту вкладку, Вы недостаточно взрослый!')};
+
+}
 
 
 
