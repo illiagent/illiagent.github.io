@@ -25,7 +25,6 @@ console.log(typeof(a));
 var nul = null;
 alert(nul);
 console.log(typeof(nul));
-
 // модификация кода final!
 var age = prompt('Сколько Вам лет?');
 while (isNaN(age) || (age <= 0)) {
