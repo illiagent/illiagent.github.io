@@ -44,8 +44,7 @@ var data = [
     firstName: 'Ashton',
     lastName: 'Kutcher',
     age:40
-  }
-,
+  },
   {
     firstName: 'Bradley',
     lastName: 'Pitt',
@@ -57,9 +56,24 @@ var data = [
     age:24
   }
 ]
-var b;
-var name = prompt('Введите имя пользователя:');
+let b;
+let name = prompt('Введите имя пользователя:');
 name = name.toUpperCase(); 
-for (var i=0, ilast = data.length; i<ilast; i++){
-if (data[i].firstName.toUpperCase() === name){ b = 1; console.log('yes'); break } else {console.log('no') }};
-if (b === 1) {alert('approved  '+'name:'+ data[i].firstName + ' '+ data[i].lastName + '   age:'+data[i].age)} else alert('Такого пользователя не существует')
+if (name === '') {
+    alert('строка пустая!');
+    b = 2
+}
+for (var i=0; i < data.length; i++){
+if (data[i].firstName.toUpperCase() === name){
+    b = 1; console.log('yes');
+    break
+} else {
+    console.log('no')
+}
+}
+if (b === 1) {
+    alert('approved  '+'name:'+ data[i].firstName + ' '+ data[i].lastName + '   age:'+data[i].age)
+} else if (b === 2) {
+    alert('Введите строку, отличную от пустой')
+} else alert('Такого пользователя не существует')
+
