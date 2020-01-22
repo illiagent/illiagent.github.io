@@ -1,4 +1,4 @@
-// ДЗ по JS  channnnggreeeeeee
+/* // ДЗ по JS  channnnggreeeeeee
 var stringText = "eto text stroki";
 alert(stringText);
 stringText = 555;
@@ -36,3 +36,30 @@ while (isNaN(age) || (age <= 0)) {
 }
 alert("возраст принят");
 if (age >= 18) { alert('Congratulations! Вы совершеннолетний!') } else { alert('Немедленно закройте эту вкладку, Вы недостаточно взрослый!') };
+*/
+
+//ДЗ 22_01_2020
+var data = [
+  {
+    firstName: 'Ashton',
+    lastName: 'Kutcher',
+    age:40
+  }
+,
+  {
+    firstName: 'Bradley',
+    lastName: 'Pitt',
+    age:54
+  },
+  {
+    firstName: 'Hannah',
+    lastName: 'Dakota',
+    age:24
+  }
+]
+var b;
+var name = prompt('Введите имя пользователя:');
+name = name.toUpperCase(); 
+for (var i=0, ilast = data.length; i<ilast; i++){
+if (data[i].firstName.toUpperCase() === name){ b = 1; console.log('yes'); break } else {console.log('no') }};
+if (b === 1) {alert('approved  '+'name:'+ data[i].firstName + ' '+ data[i].lastName + '   age:'+data[i].age)} else alert('Такого пользователя не существует')
