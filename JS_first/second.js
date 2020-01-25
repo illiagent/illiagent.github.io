@@ -37,18 +37,18 @@
 // } else alert('Такого пользователя не существует')
 
 const data = [{
-        firstName: 'Ashton',
-        lastName: 'Kutcher',
+        name: 'Ashton',
+        last: 'Kutcher',
         age: 40
     },
     {
-        firstName: 'Bradley',
-        lastName: 'Pitt',
+        name: 'Bradley',
+        last: 'Pitt',
         age: 54
     },
     {
-        firstName: 'Hannah',
-        lastName: 'Dakota',
+        name: 'Hannah',
+        last: 'Dakota',
         age: 24
     }
 ]
@@ -68,13 +68,13 @@ if (lastName !== '') {
     };
 
     if (rez !== null) {
-        console.log(rez);
+        alert(rez);
     } else {
-        console.log('usera net');
+        alert('usera net');
     }
 
 
 
 } else {
-    console.log('vy ne vveli!!!');
+    alert 'vy ne vveli!!!');
 }
