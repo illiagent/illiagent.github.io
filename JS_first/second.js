@@ -76,5 +76,5 @@ if (lastName !== '') {
 
 
 } else {
-    alert 'vy ne vveli!!!');
+    alert('vy ne vveli!!!');
 }
