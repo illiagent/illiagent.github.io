@@ -21,7 +21,7 @@ function test() {
             //создание списка + класса
             const note = document.createElement('ul');
             note.classList.add('noteTest')
-                //добавление элементов полученного массива в список      
+            //добавление элементов полученного массива в список      
             numbersArr.forEach(numbersArr => {
                 const item = document.createElement('li');
                 item.textContent = numbersArr;
