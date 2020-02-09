@@ -42,7 +42,7 @@ function test() {
         } else {
             const warning = document.createElement('div');
             warning.classList.add('warning');
-            warning.innerHTML = "ошибка. введите целое число";
+            warning.innerHTML = "ошибка. введите целое положительное число";
             document.body.append(warning);
         }
     }
