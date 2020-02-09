@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+        
+        h3 {
+            text-align: center;
+            color: red;
+            font-style: italic;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        span {
+            color: red
+        }
+        
+        form input {
+            margin-bottom: 10px;
+        }
+        
+        .noteTest {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        li:before {
+            content: "→"
+        }
+        
+        .warning {
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THIS IS FIZZBUZZ</h1>
+    <h3>здесь будет ваш числовой ряд</h3>
+    <h2>введите желаемую комбинацию от 1 до <span>N</span> </h2>
+    <form>
+        <input type="text" value="" id='uni'></input>
+        <div><input type="button" onclick="test()" value="start"></input>
+        </div>
+        <div> <input type="button" onclick="location.reload()" value="reset"></input>
+        </div>
+    </form>
+    <script src='JS_DOM.js'></script>
+</body>
+
+</html>
