@@ -3,7 +3,7 @@ function test() {
     let numbersArr = [];
 
     function change(n) {
-        if (Number.isInteger(n)) {
+        if (Number.isInteger(n) && n > 0) {
             for (let k = 1; k <= n; k++) {
                 numbersArr.push(k)
             };
