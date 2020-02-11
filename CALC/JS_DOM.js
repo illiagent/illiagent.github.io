@@ -3,7 +3,6 @@ let get = document.getElementById('get');
 //отследили нажатие и привязали функцию
 get.addEventListener('click', getButtons);
 //запустили функцию
-
 function getButtons(n) {
 
     var n = parseInt(document.getElementById('n').value);
