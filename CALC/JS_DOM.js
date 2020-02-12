@@ -1,3 +1,4 @@
+
 //выбрали кнопку 
 let get = document.getElementById('get');
 //отследили нажатие и привязали функцию
@@ -12,46 +13,48 @@ function getButtons(n) {
         //рисуем табло
         let tablo = document.createElement('input');
         tablo.setAttribute('id', 'tablo');
+        //делаем недоступность для ввода
         tablo.setAttribute('disabled', 'disabled');
         document.body.append(tablo);
         tablo.setAttribute('value', '0');
         //создаем фрагмент для новых кнопок
-        let newButtons = document.createDocumentFragment();
-        let btns = document.createElement('div');
-        btns.classList.add('newButtons');
+        let buttonsFragment = document.createDocumentFragment();
+        let buttonsDiv = document.createElement('div');
+        buttonsDiv.classList.add('buttonsDiv');
 
         //создаем инпуты кнопок
         for (let i = 1; i <= n; i++) {
             let br = document.createElement('br');
-            const itemPlus = document.createElement('input');
-            const itemMinus = document.createElement('input');
+            const btnPlus = document.createElement('input');
+            const btnMinus = document.createElement('input');
             //plus
-            itemPlus.setAttribute('type', 'button');
-            itemPlus.setAttribute('id', `plus${i}`);
-            itemPlus.setAttribute('value', `+${i}`);
-            newButtons.appendChild(itemPlus);
-            newButtons.appendChild(br);
+          btnPlus.setAttribute('value', `+${i}`);
+            btnPlus.setAttribute('type', 'button');
+            btnPlus.setAttribute('id', `plus`);
+            buttonsFragment.appendChild(btnPlus);
+            buttonsFragment.appendChild(br);
             //minus
-            itemMinus.setAttribute('type', 'button');
-            itemMinus.setAttribute('id', `minus${i}`);
-            itemMinus.setAttribute('value', `-${i}`);
-            newButtons.appendChild(itemMinus);
-            newButtons.appendChild(br);
+            btnMinus.setAttribute('value', `-${i}`);
+            btnMinus.setAttribute('type', 'button');
+            btnMinus.setAttribute('id', `minus`);
+            buttonsFragment.appendChild(btnMinus);
+            buttonsFragment.appendChild(br);
         }
         //добавляем кнопки в тело HTML
-        btns.appendChild(newButtons);
-        document.body.append(btns);
+        buttonsDiv.appendChild(buttonsFragment);
+        document.body.append(buttonsDiv);
         //чекаем табло
         let count = parseInt(document.getElementById('tablo').value);
-        //трекаем новые кнопки
-        let div = document.querySelector('.newButtons');
-        let inputsDiv = div.querySelectorAll('input')
-        for (let k = 0; k < inputsDiv.length; k++) {
-            let plusBTN = inputsDiv[k];
-            plusBTN.addEventListener('click', function() {
-                count += parseInt(inputsDiv[k].value);
+        //вешаем листнера на родительский класс с кнопками
+        document.querySelector(".buttonsDiv").addEventListener("click",(event)=>{
+            if (event.target.id === "plus"){
+               count = parseInt(count) + Math.abs(parseInt(event.target.value));
                 document.getElementById('tablo').value = count;
-            })
-        }
+            }else{
+           count = parseInt(count) - Math.abs(parseInt(event.target.value));
+                document.getElementById('tablo').value = count;
+            }
+    });
     }
 }
+
