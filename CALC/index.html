@@ -15,7 +15,7 @@
         .buttonsDiv {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             width: 100px;
         }
         
@@ -28,12 +28,11 @@
 <body> <a href="JS_DOM.js" target="blank">исходник JS</a>
     <br>
     <br>
-    <p>Введите число для генерации кнопок:</p>
-    <br>
-    <input type="text" value="0" id="n"></input>
+    <input type="text" value="" placeholder="значение от 1 до 20" id="n"></input>
     <input type="button" id="get" value="get"></input>
     <input type="button" value="reset" onClick="location.reload()"></input>
     <br>
     <script src='JS_DOM.js'></script>
 </body>
+
 </html>
