@@ -7,6 +7,7 @@ function getButtons(n) {
     var n = parseInt(document.getElementById('n').value);
     if (n > 20) {
         alert('ошибка. в калькуляторе может храниться не больше 20 позиций кнопок');
+        location.reload()
     } else {
         if (!n) {
             alert('введите целое положительное число');
