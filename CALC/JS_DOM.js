@@ -9,7 +9,7 @@ function getButtons(n) {
         alert('ошибка. в калькуляторе может храниться не больше 20 позиций кнопок');
         location.reload();
     } else {
-        if (!n && n<=0) {
+        if (!n || n <= 0) {
             alert('введите целое положительное число');
             location.reload();
         } else {
