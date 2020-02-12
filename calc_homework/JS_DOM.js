@@ -47,11 +47,17 @@ function getButtons(n) {
         let div = document.querySelector('.newButtons');
         let inputsDiv = div.querySelectorAll('input')
         for (let k = 0; k < inputsDiv.length; k++) {
-            let plusBTN = inputsDiv[k];
-            plusBTN.addEventListener('click', function() {
+            let action = inputsDiv[k];
+           if (k % 2 === 0){ 
+            action.addEventListener('click', function() {
                 count += parseInt(inputsDiv[k].value);
                 document.getElementById('tablo').value = count;
-            })
+            })}else{ 
+                action.addEventListener('click', function() {
+                count += parseInt(inputsDiv[k].value);
+                document.getElementById('tablo').value = count;
+     })
+            }
         }
     }
 }
