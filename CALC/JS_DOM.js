@@ -7,11 +7,11 @@ function getButtons(n) {
     var n = parseInt(document.getElementById('n').value);
     if (n > 20) {
         alert('ошибка. в калькуляторе может храниться не больше 20 позиций кнопок');
-        location.reload()
+        location.reload();
     } else {
         if (!n) {
             alert('введите целое положительное число');
-            location.reload()
+            location.reload();
         } else {
             //рисуем табло
             let tablo = document.createElement('input');
