@@ -1,4 +1,3 @@
-
 //выбрали кнопку 
 let get = document.getElementById('get');
 //отследили нажатие и привязали функцию
@@ -48,13 +47,12 @@ function getButtons(n) {
         //вешаем листнера на родительский класс с кнопками
         document.querySelector(".buttonsDiv").addEventListener("click",(event)=>{
             if (event.target.id === "plus"){
-               count = parseInt(count) + Math.abs(parseInt(event.target.value));
+               count += Math.abs(parseInt(event.target.value));
                 document.getElementById('tablo').value = count;
             }else{
-           count = parseInt(count) - Math.abs(parseInt(event.target.value));
+           count -= Math.abs(parseInt(event.target.value));
                 document.getElementById('tablo').value = count;
             }
     });
     }
 }
-
