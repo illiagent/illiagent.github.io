@@ -4,7 +4,7 @@ let get = document.getElementById('get');
 get.addEventListener('click', getButtons);
 //запустили функцию
 function getButtons(n) {
-    var n = parseInt(document.getElementById('n').value);
+    var n = Number(document.getElementById('n').value);
     if (n > 20) {
         alert('ошибка. в калькуляторе может храниться не больше 20 позиций кнопок');
         location.reload();
