@@ -25,7 +25,7 @@ document.getElementById('procent').addEventListener("click", function() {
 function dot() {
     let arr = Array.from(document.getElementById('screen').value);
     let dotValue = null;
-     arr.forEach(function(item) {
+    arr.forEach(function(item) {
         if (item === '.') {
             dotValue = 1;
         }
@@ -69,10 +69,9 @@ document.querySelector('.second').addEventListener("click", (event) => {
     } else
         result();
 });
-
 //button =
 function result() {
-//check if --
+    //check if --
     a = document.getElementById('screen').value;
     if (b === "-" && a < 0) {
         document.getElementById('screen').value = -((Number(a) - Number(c)));
