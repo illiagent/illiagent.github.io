@@ -74,6 +74,7 @@ document.querySelector('.second').addEventListener("click", (event) => {
 
 //button =
 function result() {
+//check if --
     a = document.getElementById('screen').value;
     if (b === "-" && a < 0) {
         document.getElementById('screen').value = -((Number(a) - Number(c)));
