@@ -25,6 +25,7 @@
                     margin: 0;
                     padding: 0;
                     color: white;
+                    outline: none
                 }
                 
                 .calc__display {
