@@ -4,10 +4,12 @@ check = true;
 let a = "";
 let c = "";
 let b = "";
-
+let rez = "";
 //button A/C
 document.getElementById('ac').addEventListener("click", function() {
     document.getElementById('screen').value = "0";
+    document.getElementById('ac').value = "A/C";
+
 });
 
 //button +/-
@@ -37,6 +39,7 @@ function dot() {
 
 //buttons value
 document.getElementById('two').addEventListener("click", (event) => {
+    document.getElementById('ac').value = "C";
     if (event.target.dataset.action === "dot") {
         dot()
     } else {
@@ -58,18 +61,23 @@ document.getElementById('two').addEventListener("click", (event) => {
 });
 //btns operations
 document.querySelector('.second').addEventListener("click", (event) => {
+    a = document.getElementById('screen').value
+
     if (event.target.dataset.action === "operation") {
-        a = document.getElementById('screen').value
         check = false;
         b = event.target.dataset.value;
         c = a;
-        // console.log(b)
-        // console.log(c)
+
     } else
         result();
 });
+
 //button =
 function result() {
-    document.getElementById('screen').value = eval((c + b) + a);
     a = document.getElementById('screen').value;
+    if (b === "-" && a < 0) {
+        document.getElementById('screen').value = -((Number(a) - Number(c)));
+    } else {
+        document.getElementById('screen').value = eval(c + b + a);
+    }
 }
