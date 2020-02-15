@@ -46,7 +46,7 @@
                     /* font-family: 'Orbitron', sans-serif; */
                 }
                 
-/*                 .new__buttons input {
+                  .new__buttons input {
                     border-radius: 50%;
                     width: 80px;
                     height: 80px;
@@ -86,12 +86,12 @@
                     color: black;
                 }
                 
-                .first__two input {
-/*                     background-color: #333333; */
+                .first__two input {               
+                background-color: #333333; 
                 }
                 
                 .second input {
-/*                     background-color: #ed8d0e */
+                   background-color: #ed8d0e 
                 }
                 
                 #zero {
@@ -104,4 +104,4 @@
                     text-align: left;
                     padding-left: 25px;
                 }
- */
+ 
