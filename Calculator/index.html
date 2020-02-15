@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <br>
+    <br>
+
+    <div class="new__calc">
+        <div class="calc__display"> <input id="screen" type="text" value="0" disabled></input>
+        </div>
+
+
+        <div class="new__buttons">
+            <div class="first">
+                <div class="first__one">
+                    <input type="button" id="ac" value="A/C"></input>
+                    <input type="button" id="change" value="+/-"></input>
+                    <input type="button" id="procent" value="%"></input>
+                </div>
+                <div class="first__two" id="two">
+                    <input type="button" value="7"></input>
+                    <input type="button" value="8"></input>
+                    <input type="button" value="9"></input>
+                    <input type="button" value="4"></input>
+                    <input type="button" value="5"></input>
+                    <input type="button" value="6"></input>
+                    <input type="button" value="1"></input>
+                    <input type="button" value="2"></input>
+                    <input type="button" value="3"></input>
+                    <input type="button" value="0" id="zero"></input>
+                    <input data-action="dot" type="button" value="."></input>
+                </div>
+            </div>
+            <div class="second">
+                <input type="button" data-action="operation" data-value="/" value="&#x00F7"></input>
+                <input type="button" data-action="operation" data-value="*" value="&#xD7"></input>
+                <input type="button" data-action="operation" data-value="+" value="+"></input>
+                <input type="button" data-action="operation" data-value="-" value="-"></input>
+                <input type="button" data-action="result" value="="></input>
+
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
