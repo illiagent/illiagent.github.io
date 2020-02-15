@@ -78,3 +78,24 @@ if (lastName !== '') {
 } else {
     alert('vy ne vveli!!!');
 }
+
+let numbersArr = [];
+
+function change(n) {
+    if (Number.isInteger(n)) {
+        for (let k = 1; k <= n; k++) {
+            numbersArr.push(k)
+        };
+        for (let i = 0; i < numbersArr.length; i++) {
+            if (numbersArr[i] % 3 === 0 && numbersArr[i] % 5 === 0) {
+                numbersArr[i] = "fizzbuzz"
+            } else if (numbersArr[i] % 5 === 0) {
+                numbersArr[i] = "buzz"
+            } else if (numbersArr[i] % 3 === 0) {
+                numbersArr[i] = "fizz"
+            }
+        }
+    } else console.log("ошибка. введите целое число")
+}
+change(45);
+console.log(numbersArr);

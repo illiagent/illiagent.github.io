@@ -28,37 +28,38 @@ console.log(numbersArr);
 let rez = 0;
 let d;
 let e;
+
 function anagram(a, b) {
     d = a.toUpperCase();
-    e = b.toUpperCase(
-        if (a.length === b.length) {
-            for (let i = 0; i < a.length; i++) {
-                if (d.indexOf(e[i]) !== -1) {
-                    rez += 1;
-                }
+    e = b.toUpperCase()
+    if (a.length === b.length) {
+        for (let i = 0; i < a.length; i++) {
+            if (d.indexOf(e[i]) !== -1) {
+                rez += 1;
             }
-            if (rez === a.length) {
-                console.log('words are anagramms')
-            } else {
-                console.log('words are not anagramms')
-            };
-        } else {
-            console.log('words have different amount of letters')
         }
+        if (rez === a.length) {
+            console.log('words are anagramms')
+        } else {
+            console.log('words are not anagramms')
+        };
+    } else {
+        console.log('words have different amount of letters')
     }
-    anagram("abc", "AcB")
+}
+anagram("abc", "AcB")
 
 //----------------------------------
 
 //task3:  fibonacci
 
 //a
-function fibonacci (n){
-  if (n <= 1){
-    return n;
-  } else {
-    return fibonacci(n-1) + fibonacci(n-2);
-  }
+function fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
 }
 console.log(fibonacci(1));
 console.log(fibonacci(2));
@@ -76,41 +77,38 @@ function fibonacci(n) {
     }
     return b;
 }
-console.log(fibonacci(3);
-console.log(fibonacci(4); 
-console.log(fibonacci(7);
-//----------------------------------
+console.log(fibonacci(3); console.log(fibonacci(4); console.log(fibonacci(7);
+                //----------------------------------
 
-//task4:  sum letters on pages
+                //task4:  sum letters on pages
 
-//a
-let arr = [];
-const pages = 500;
-let sum = 0;
-for (let i = 0; i <= pages; i++) {
-    arr.push(i);
-}
-console.log(arr)
-let result = arr.reduce(function(acc, curr) {
-    let str = curr.toString();
-    for (let k = 0; k < str.toString().length; k++) {
-        acc += parseInt(str[k]);
-    }
-    return acc
-});
-console.log(result)
+                //a
+                let arr = [];
+                const pages = 500;
+                let sum = 0;
+                for (let i = 0; i <= pages; i++) {
+                    arr.push(i);
+                }
+                console.log(arr);
+                let result = arr.reduce(function(acc, curr) {
+                    let str = curr.toString();
+                    for (let k = 0; k < str.toString().length; k++) {
+                        acc += parseInt(str[k]);
+                    }
+                    return acc
+                }); console.log(result)
 
-//b
-let arr = [];
-let result = 0;
-const pages = 500;
-for (let i = 0; i <= pages; i++){
-  arr.push(i);
-  str = arr[i].toString()
-    for(k = 0; k < str.length;k++){
-      result+=parseInt(str[k])
-    }
-}
-console.log(result)
+                //b
+                let arr = [];
+                let result = 0;
+                const pages = 500;
+                for (let i = 0; i <= pages; i++) {
+                    arr.push(i);
+                    str = arr[i].toString()
+                    for (k = 0; k < str.length; k++) {
+                        result += parseInt(str[k])
+                    }
+                }
+                console.log(result)
 
-//----------------------------------
+                //----------------------------------

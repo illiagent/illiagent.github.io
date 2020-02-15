@@ -47,5 +47,5 @@ function test() {
         }
     }
     //запуск функции со значением из inputa
-    change(parseInt(document.getElementById('uni').value));
+    change(Number(document.getElementById('uni').value));
 };
