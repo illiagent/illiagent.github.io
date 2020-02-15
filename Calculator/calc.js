@@ -9,7 +9,6 @@ let rez = "";
 document.getElementById('ac').addEventListener("click", function() {
     document.getElementById('screen').value = "0";
     document.getElementById('ac').value = "A/C";
-
 });
 
 //button +/-
@@ -26,8 +25,7 @@ document.getElementById('procent').addEventListener("click", function() {
 function dot() {
     let arr = Array.from(document.getElementById('screen').value);
     let dotValue = null;
-
-    arr.forEach(function(item) {
+     arr.forEach(function(item) {
         if (item === '.') {
             dotValue = 1;
         }
