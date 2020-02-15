@@ -79,12 +79,5 @@ function result() {
         document.getElementById('screen').value = -((Number(a) - Number(c)));
     } else {
         document.getElementById('screen').value = eval(c + b + a);
-    } <<
-    <<
-    << < HEAD
-} ===
-===
-=
-} >>>
->>>
-> 42 fa8c07ff374282cfe2bd50abc5025b3d125d8b
+    }
+}
