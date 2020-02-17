@@ -38,6 +38,7 @@ function dot() {
 //buttons value
 document.getElementById('two').addEventListener("click", (event) => {
     document.getElementById('ac').value = "C";
+if (event.target.dataset.btn === "nmb"){
     if (event.target.dataset.action === "dot") {
         dot()
     } else {
@@ -56,6 +57,7 @@ document.getElementById('two').addEventListener("click", (event) => {
             }
         }
     }
+}
 });
 //btns operations
 document.querySelector('.second').addEventListener("click", (event) => {
