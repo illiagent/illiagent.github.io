@@ -29,7 +29,6 @@
                     padding: 0;
                     color: white;
                     outline: none;
-                     font-family: 'Oxygen', sans-serif;
                 }
                 
                 .calc__display {
@@ -48,7 +47,6 @@
                     padding: 0 20px;
                     margin-bottom: 10px;
                     font-weight: 300;
-                    font-family: 'Roboto Mono', monospace;
                    
                 }
                 
@@ -85,7 +83,6 @@
                 
                 .first__one input {
                     background-color: #a5a5a5;
-                    font-family: 'Oxygen', sans-serif;
                 }
                 
                 .first .first__one input {
@@ -95,12 +92,10 @@
                 
                 .first__two input {
                     background-color: #333333;
-                    font-family: 'Oxygen', sans-serif;
                 }
                 
                 .second input {
                     background-color: #ed8d0e
-                     font-family: 'Oxygen', sans-serif;
                 }
                 
                 #zero {
