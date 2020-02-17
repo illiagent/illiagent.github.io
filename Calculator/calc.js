@@ -80,4 +80,5 @@ function result() {
     } else {
         document.getElementById('screen').value = eval(c + b + a);
     }
+document.getElementById('screen').value = 0;
 }
