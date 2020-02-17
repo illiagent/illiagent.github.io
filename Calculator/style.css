@@ -13,6 +13,9 @@
                 .second input:hover {
                     background-color: orange
                 }
+                .second input:focus {
+                    background-color: orange
+                }
                 
                 .new__calc {
                     background-color: black;
