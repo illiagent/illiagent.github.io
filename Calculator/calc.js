@@ -8,7 +8,7 @@ let rez = "";
 //button A/C
 document.getElementById('ac').addEventListener("click", function() {
     document.getElementById('screen').value = "0";
-    document.getElementById('ac').value = "A/C";
+    document.getElementById('ac').value = "C";
 });
 
 //button +/-
