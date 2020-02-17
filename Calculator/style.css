@@ -47,7 +47,8 @@
                     padding: 0 20px;
                     margin-bottom: 10px;
                     font-weight: 300;
-                    font-family: 'Orbitron', sans-serif; 
+                    font-family: 'Roboto Mono', monospace;
+                   
                 }
                 
                 .new__buttons input {
@@ -83,6 +84,7 @@
                 
                 .first__one input {
                     background-color: #a5a5a5;
+                    font-family: 'Oxygen', sans-serif;
                 }
                 
                 .first .first__one input {
@@ -92,14 +94,17 @@
                 
                 .first__two input {
                     background-color: #333333;
+                    font-family: 'Oxygen', sans-serif;
                 }
                 
                 .second input {
                     background-color: #ed8d0e
+                     font-family: 'Oxygen', sans-serif;
                 }
                 
                 #zero {
                     margin-left: 0;
+
                 }
                 
                 .first__two #zero {
