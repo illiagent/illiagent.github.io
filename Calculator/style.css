@@ -29,6 +29,7 @@
                     padding: 0;
                     color: white;
                     outline: none;
+                    font-family: 'Rubik', sans-serif;
                 }
                 
                 .calc__display {
