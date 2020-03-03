@@ -38,5 +38,4 @@ clearTimeout(timer);
         document.querySelector(".date").innerHTML = month + "<br>" + date + "<br>" +
             hours + ":" + minutes + ":" + seconds;
     }
-   
-})
+   })
