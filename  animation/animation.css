@@ -1,0 +1,79 @@
+
+
+/* .traffic-light {
+    animation-name: changeBackgroundColor;
+    animation-duration: 6s;
+    animation-direction: alternate-reverse;
+} */
+
+
+    /* animation-direction: normal;
+    animation-timing-function: linear; */
+    @keyframes motion {
+        0%   { transform: translate(0, -100px); }
+                 100%  { transform: translate(0, 500px); }
+    }
+
+    .field{
+        width:400px;
+        height: 500px;
+        overflow: hidden;
+        display:flex ;
+        justify-content: space-between;
+    }
+    .trees{
+        width: 25%;
+        background-color: orange
+    }
+    .road{
+        width: 50%;
+        background-color: gray;
+
+   }
+   
+.anim{ 
+    width: 50px;
+    height:50px;
+    background-color:green;
+    margin:0 auto;
+    animation: motion 5s linear infinite;
+animation-delay: 1s;
+
+}
+.anim.one{
+animation-delay: 1s;
+}
+.anim.two{
+animation-delay: 4s;
+}
+    
+.anim.three{
+    animation-delay: 3s;
+}
+.anim.four{
+    animation-delay: 6s;
+}
+
+@keyframes line{
+            0%   { transform: translate(0, -400px); }
+                     100%  { transform: translate(0, 500px); }
+        }
+
+        
+    .line{
+                width: 20px;
+                height:100px;
+                background-color: white;
+                margin:0 auto;
+            animation: line 2s linear infinite;
+            margin-bottom: 60px;
+        
+            }
+            .line-one {
+                animation-delay: 1s;
+            }
+            .line-two {
+                animation-delay: 2s;
+            }
+    
+    
