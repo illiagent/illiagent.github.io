@@ -1,14 +1,4 @@
 
-
-/* .traffic-light {
-    animation-name: changeBackgroundColor;
-    animation-duration: 6s;
-    animation-direction: alternate-reverse;
-} */
-
-
-    /* animation-direction: normal;
-    animation-timing-function: linear; */
     @keyframes motion {
         0%   { transform: translate(0, -100px); }
                  100%  { transform: translate(0, 500px); }
