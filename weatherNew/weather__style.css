@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.container {
+  background-image: url(img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+/*  */
+.weather__input {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.input__form {
+  margin-right: 10px;
+}
+.input__form input {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  border: none;
+}
+.button button {
+  font-size: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+}
+.button button:hover {
+  background-color: white;
+  color: black;
+}
+
+/*  */
+.weather__current {
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.first__block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightblue;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.first__cityname {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  line-height: 40px;
+
+  color: white;
+}
+.first__day {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.first__dayname {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+.first__date {
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.first__time {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 15px;
+  color: white;
+  line-height: 40px;
+  font-weight: bold;
+  width: 60px;
+}
+
+.second__block {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid lightblue;
+}
+
+.second__now {
+  width: 70%;
+  display: flex;
+}
+.second__one {
+  width: 50%;
+}
+
+.now {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+.second__icon {
+  text-align: center;
+}
+.second__icon img {
+  width: 130px;
+  margin: -20px;
+}
+.second__condition {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 16px;
+}
+.second__two {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 90px;
+  color: white;
+}
+
+.second__two:after,
+.temperature:after,
+.day__temperature:after {
+  content: "\00B0";
+}
+/*  */
+.third__forecast {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.third {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid lightblue;
+  padding: 5px 0;
+}
+.third:last-child {
+  border: none;
+}
+
+.name {
+  width: 33.33%;
+  font-size: 8px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.temperature {
+  width: 33.33%;
+  text-align: center;
+}
+.condition {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 7px;
+}
+.icon {
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.icon img {
+  width: 30px;
+  margin-top: -5px;
+}
+.condition {
+  text-align: center;
+}
+
+.forecast {
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  padding: 30px;
+}
+.forecast__day {
+  border-right: 1px solid lightblue;
+  text-align: center;
+  width: 25%;
+}
+.forecast__day:last-child {
+  border: none;
+}
+.day__name {
+  color: white;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.day__date {
+  color: white;
+  font-size: 12px;
+}
+.day__temperature,
+.temperature {
+  color: white;
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+}
+.day__icon img {
+  width: 50px;
+  margin-bottom: -5px;
+}
+@keyframes dot {
+  0% {
+    background-color: white;
+    opacity: 0;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.dot {
+  margin-left: 5px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  animation: dot 1s linear 2s infinite;
+}

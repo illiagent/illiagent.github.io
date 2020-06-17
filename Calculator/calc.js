@@ -8,8 +8,7 @@ let rez = "";
 //button A/C
 document.getElementById('ac').addEventListener("click", function() {
     document.getElementById('screen').value = "0";
-    document.getElementById('ac').value = "A/C";
-
+    document.getElementById('ac').value = "AC";
 });
 
 //button +/-
@@ -26,7 +25,6 @@ document.getElementById('procent').addEventListener("click", function() {
 function dot() {
     let arr = Array.from(document.getElementById('screen').value);
     let dotValue = null;
-
     arr.forEach(function(item) {
         if (item === '.') {
             dotValue = 1;
@@ -40,6 +38,7 @@ function dot() {
 //buttons value
 document.getElementById('two').addEventListener("click", (event) => {
     document.getElementById('ac').value = "C";
+if (event.target.dataset.btn === "nmb"){
     if (event.target.dataset.action === "dot") {
         dot()
     } else {
@@ -58,6 +57,7 @@ document.getElementById('two').addEventListener("click", (event) => {
             }
         }
     }
+}
 });
 //btns operations
 document.querySelector('.second').addEventListener("click", (event) => {
@@ -71,10 +71,9 @@ document.querySelector('.second').addEventListener("click", (event) => {
     } else
         result();
 });
-
 //button =
 function result() {
-//checking if --
+    //check if --
     a = document.getElementById('screen').value;
     if (b === "-" && a < 0) {
         document.getElementById('screen').value = -((Number(a) - Number(c)));

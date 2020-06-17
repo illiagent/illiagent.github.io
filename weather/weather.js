@@ -2,7 +2,7 @@
 document.getElementById('button').addEventListener("click", () => {
 	let cityName;
         cityName = document.getElementById('form').value;
-        let url = "http://api.openweathermap.org/data/2.5/weather?lang=ru&q=" + `${cityName}` + "&appid=7ef5bbf172b6b63ecedaa4b032ac7887";
+        let url = "https://api.openweathermap.org/data/2.5/weather?lang=ru&q=" + `${cityName}` + "&appid=7ef5bbf172b6b63ecedaa4b032ac7887";
 
 	    function autoRefresh() {
 	
@@ -38,5 +38,4 @@ clearTimeout(timer);
         document.querySelector(".date").innerHTML = month + "<br>" + date + "<br>" +
             hours + ":" + minutes + ":" + seconds;
     }
-   
-})
+   })

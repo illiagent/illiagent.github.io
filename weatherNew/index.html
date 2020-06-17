@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="weather__style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather__input">
+        <div class="input__form"><input id="form" placeholder="type cityname" type="text" /></div>
+        <div class="button"><button id="button">get weather</button></div>
+      </div>
+      <div class="weather__current">
+        <div class="first__block">
+          <div class="first__cityname"></div>
+          <div class="first__day">
+            <div class="first__dayname"></div>
+            <div class="first__date"></div>
+          </div>
+          <div class="first__time"></div>
+        </div>
+        <!--  -->
+        <div class="second__block">
+          <div class="second__now">
+            <div class="second__one">
+              <div class="now">
+                <div>Now</div>
+                <div class="dot"></div>
+              </div>
+              <div class="second__icon"><img id="second__icon" src="" alt="" /></div>
+              <div class="second__condition"></div>
+            </div>
+            <div class="second__two"></div>
+          </div>
+          <div class="third__forecast">
+            <div class="third">
+              <div class="name">morning</div>
+              <div id="morning-temp" class="temperature"></div>
+
+              <div class="icon">
+                <img id="morn" src="" alt="" />
+                <div id="morning-cond" class="condition"></div>
+              </div>
+            </div>
+            <div class="third">
+              <div class="name">day</div>
+              <div id="day-temp" class="temperature"></div>
+              <div class="icon">
+                <img id="day" src="" alt="" />
+                <div id="day-cond" class="condition"></div>
+              </div>
+            </div>
+            <div class="third">
+              <div class="name">night</div>
+              <div id="night-temp" class="temperature"></div>
+
+              <div class="icon">
+                <img id="night" src="" alt="" />
+                <div id="night-cond" class="condition"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="forecast">
+        <div class="forecast__day">
+          <div class="day__name" id="n1"></div>
+          <div class="day__date" id="d1"></div>
+          <div class="day__icon"><img id="ic-1" src="" alt="" /></div>
+          <div class="day__temperature" id="t1"></div>
+        </div>
+        <div class="forecast__day">
+          <div class="day__name" id="n2"></div>
+          <div class="day__date" id="d2"></div>
+          <div class="day__icon"><img id="ic-2" src="" alt="" /></div>
+          <div class="day__temperature" id="t2"></div>
+        </div>
+        <div class="forecast__day">
+          <div class="day__name" id="n3"></div>
+          <div class="day__date" id="d3"></div>
+          <div class="day__icon"><img id="ic-3" src="" alt="" /></div>
+          <div class="day__temperature" id="t3"></div>
+        </div>
+        <div class="forecast__day">
+          <div class="day__name" id="n4"></div>
+          <div class="day__date" id="d4"></div>
+          <div class="day__icon"><img id="ic-4" src="" alt="" /></div>
+          <div class="day__temperature" id="t4"></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript " src="weather.js "></script>
+    <script type="text/javascript " src="lib/moment/moment.min.js "></script>
+    <!-- <> -->
+  </body>
+</html>
