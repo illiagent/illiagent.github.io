@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-body {}
-
 header {
     max-width: 1440px;
     margin: 0 auto;
