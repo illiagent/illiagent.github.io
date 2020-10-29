@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "http://illiagent.github.io/",
+  "start_url": "http://illiagent.github.io/stopwatch",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
